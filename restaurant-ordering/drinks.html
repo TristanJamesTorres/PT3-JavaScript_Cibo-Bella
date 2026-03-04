@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks - Cibo & Bella</title>
+    <link rel="icon" type="image/png" href="/Images/TJ_Logo.png">
+    <link rel="stylesheet" href="/restaurant-ordering/style.css"> 
+</head>
+<body>
+    <div class="main_container">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+             <div class="header_wrapper">
+                <div class="header_left">
+                    <img src="/restaurant-ordering/img/Cibo_&_Bella_Logo.jpg" alt="">
+                </div>
+                <div class="header_nav">
+                    <a href="index.html">Main Course</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="desert.html">Desert</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MENU -->
+    <section id="menu" class="menu"> 
+        <div class="container">
+            <div class="menu_title">
+                <h2>Drinks</h2>
+            </div>
+            <div class="menu_wrapper">
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/Strawberry&Cream.png" alt="">
+                    <div class="menu_text">
+                        <span>Strawberry Cream</span>
+                        <p>Fruity and refreshing frappes made with strawberries, ice and milk, topped with whipped cream.</p>
+                        <div class="menu_footer">
+                            <h3>₱165</h3>
+                            <input type="number" id="Strawberry&CreamQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/OreoMilkshake.png" alt="">
+                    <div class="menu_text">
+                        <span>Oreo Milkshake</span>
+                        <p>Delicious blend of oreo cookies, ice and milk, topped with whipped cream.</p>
+                        <div class="menu_footer">
+                            <h3>₱170</h3> 
+                            <input type="number" id="OreoMilkshakeQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/Matcha.png" alt="">
+                    <div class="menu_text">
+                        <span>Matcha</span>
+                        <p>Blend of creamy milk, ice and premium matcha powder, topped with whipped cream.</p>
+                        <div class="menu_footer">
+                            <h3>₱165</h3> 
+                            <input type="number" id="CrispyPorkBellyQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/Caramel.png" alt="">
+                    <div class="menu_text">
+                        <span>Mocha Caramel</span>
+                        <p>Rich mix of espresso, mocha, caramel syrup, topped with whipped cream.</p>
+                        <div class="menu_footer">
+                            <h3>₱175</h3> 
+                            <input type="number" id="MochaCaramelQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/ChocoJavaChip.png" alt="">
+                    <div class="menu_text">
+                        <span>Choco Java Chip</span>
+                        <p>Blend of chocolate chips, espresso, mocha sauce, topped with whipped cream.</p>
+                        <div class="menu_footer">
+                            <h3>₱170</h3> 
+                            <input type="number" id="ChocoJavaChipQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/CookieCrumble.png" alt="">
+                    <div class="menu_text">
+                        <span>Cookie Crumber</span>
+                        <p>Delicious blend of Oreo cookies, espresso, ice and milk, topped with whipped cream.</p>
+                        <div class="menu_footer">
+                            <h3>₱175</h3> 
+                            <input type="number" id="CookieCrumble" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_total">
+                <h3>Total: ₱<span id="totalMain">0</span></h3>
+                <button class="btn" onclick="computeMainCourse()">Place Order</button>
+            </div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

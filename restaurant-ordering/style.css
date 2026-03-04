@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: Pacifico;
+  src: url(Pacifico-Regular.ttf);
+}
+:root {
+  --light: #e4e6d9;
+  --green: #838b50;
+  --orange: #b16420;
+  --blue: #126295;
+  --poppins: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--poppins);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 17rem; /* Adjusted for better visibility */
+}
+.main_container {
+  width: 100%;
+}
+.btn {
+  background-color: var(--orange);
+  color: var(--light);
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 0.5s;
+  border: none;
+  box-shadow: 5px 10px 15px #00000091;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn_finish {
+  background-color: var(--blue) !important;
+}
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--green);
+  padding: 2rem 0;
+}
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_left img {
+  border-radius: 50%;
+  width: 7rem;
+}
+.header_nav {
+  display: flex;
+  gap: 5rem;
+}
+.header_nav a {
+  position: relative;
+  font-size: 1.8rem;
+  color: var(--light);
+  transition: color 0.3s ease;
+}
+.header_nav a:hover {
+  color: var(--blue);
+}
+.banner{
+  background-image: linear-gradient(to top, #000000b2, transparent),
+                    url("/restaurant-ordering/img/Cibo_&_Bella_BG.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  background-color: var(--dark);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+.menu_title {
+  font-family: Pacifico;
+  color: var(--orange);
+  font-size: 3.5rem;
+  font-weight: 0;
+  padding-bottom: 5rem;
+  margin-left: 2rem;
+}
+.menu_wrapper {
+  display: grid;
+  grid-template-columns: 35rem 35rem 35rem;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.menu_card {
+  background-color: var(--green);
+  padding: 1.5rem;
+  height: 20rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  box-shadow: 5px 10px 15px #00000091;
+}
+.menu_card img{
+  object-fit: cover;
+  height: 100%;
+  width: 50%;
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: 5px 10px 15px #00000091;
+}
+.menu_text {
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.5rem;
+}
+.menu_text span{
+  color: var(--light);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.menu_text p{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.menu_footer h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+.menu_footer input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 50px;
+  text-align: center;
+}
+.menu_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.order_total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+    gap: 1.5rem;
+    color: var(--blue);
+    padding-top: 2rem;
+}
+.order_total h3 {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.order_summary {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem; 
+}
+.order_summary_title {
+  font-family: Pacifico;
+  color: var(--orange);
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.table_wrapper {
+  max-height: 25rem;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background-color: var(--light);
+  border: 1px solid #ccc;
+  position: relative; /* Context for sticky header */
+}
+.cart_table {
+  width: 80rem;
+  border-collapse: collapse;
+  background-color: var(--light);
+}
+.cart_table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--green);
+  color: var(--light);
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.cart_table td {
+  padding: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.remove_btn {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-family: var(--poppins);
+}
+.checkout_container {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--green);
+  border-radius: 1rem;
+  color: var(--light);
+  text-align: right;
+  box-shadow: 5px 10px 15px #00000091;
+  width: 80rem;
+}
+.checkout_container h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.cart_actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+.cart_actions .btn {
+  width: auto;
+  min-width: 30rem;
+  text-align: center;
+}
+.table_wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.table_wrapper::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 10px;
+}

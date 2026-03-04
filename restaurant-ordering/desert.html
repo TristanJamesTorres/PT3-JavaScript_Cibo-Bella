@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert - Cibo & Bella</title>
+    <link rel="icon" type="image/png" href="/Images/TJ_Logo.png">
+    <link rel="stylesheet" href="/restaurant-ordering/style.css"> 
+</head>
+<body>
+    <div class="main_container">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+             <div class="header_wrapper">
+                <div class="header_left">
+                    <img src="/restaurant-ordering/img/Cibo_&_Bella_Logo.jpg" alt="">
+                </div>
+                <div class="header_nav">
+                    <a href="index.html">Main Course</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="desert.html">Desert</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MENU -->
+    <section id="menu" class="menu"> 
+        <div class="container">
+            <div class="menu_title">
+                <h2>Desert</h2>
+            </div>
+            <div class="menu_wrapper">
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/CampfireSmore.png" alt="">
+                    <div class="menu_text">
+                        <span>Campfire Smore</span>
+                        <p>toasted marshmallow, grahan crackers, melted chocolate.</p>
+                        <div class="menu_footer">
+                            <h3>₱85</h3>
+                            <input type="number" id="CampfireSmoreQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/DulceDeLecheBar.png" alt="">
+                    <div class="menu_text">
+                        <span>Dulce De Leche Bar</span>
+                        <p>Crumbly pastry with sweet concentrated dulce de leche.</p>
+                        <div class="menu_footer">
+                            <h3>₱75</h3> 
+                            <input type="number" id="DulceDeLecheBarQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="/restaurant-ordering/img/StrawberryBanana.png" alt="">
+                    <div class="menu_text">
+                        <span>Strawberry Banana Shake</span>
+                        <p>Strawberry and banana blended with ice and milk.</p>
+                        <div class="menu_footer">
+                            <h3>₱155</h3> 
+                            <input type="number" id="StrawberryBananaQty" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="order_total">
+                <h3>Total: ₱<span id="totalMain">0</span></h3>
+                <button class="btn" onclick="computeMainCourse()">Place Order</button>
+            </div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

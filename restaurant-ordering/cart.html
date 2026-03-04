@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Course - Cibo & Bella</title>
+    <link rel="icon" type="image/png" href="/Images/TJ_Logo.png">
+    <link rel="stylesheet" href="/restaurant-ordering/style.css"> 
+</head>
+<body>
+    <div class="main_container">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+             <div class="header_wrapper">
+                <div class="header_left">
+                    <img src="/restaurant-ordering/img/Cibo_&_Bella_Logo.jpg" alt="">
+                </div>
+                <div class="header_nav">
+                    <a href="index.html">Main Course</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="desert.html">Desert</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+  <section class="order_summary">
+    <div class="container">
+        <div class="order_summary_title">
+            <h2>Order Summary</h2>
+        </div>
+        
+        <div class="table_wrapper">
+            <table class="cart_table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTableBody">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="checkout_container">
+            <p>Original Total: ₱<span id="subtotalDisplay">0</span></p>
+            <p style="color: #ffcccc;">Discount: -₱<span id="discountDisplay">0</span></p>
+            <hr style="margin: 1rem 0; border: 0; border-top: 2px solid var(--light);">
+            <h2>Final Total: ₱<span id="finalDisplay">0</span></h2>
+            
+            <div class="cart_actions">
+                <button class="btn" onclick="applySeniorDiscount()">Apply Senior Discount</button>
+                <button class="btn btn_finish" onclick="finishOrder()">Finish Transaction</button>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Run display function when page loads
+        window.onload = displayCart;
+    </script>
+</body>
+</html>

@@ -97,7 +97,7 @@ header {
 }
 .banner{
   background-image: linear-gradient(to top, #000000b2, transparent),
-                    url("/restaurant-ordering/img/Cibo_&_Bella_BG.jpg");
+                    url("img/Cibo_&_Bella_BG.jpg");
   background-size: cover;
   height: 100vh;
   background-position: center center;

@@ -124,7 +124,7 @@ function finishOrder() {
     } else {
         alert("Transaction Complete! Thank you for dining with Cibo & Bella.");
         localStorage.removeItem("ciboCart"); 
-        window.location.href = "index.hml"; 
+        window.location.href = "index.html"; 
     }
 }
 
